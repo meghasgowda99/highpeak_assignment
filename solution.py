@@ -35,6 +35,6 @@ for i in range(N-n+1):
         j = i
 print("The goodies selected for distribution are:\n", file=open("output.txt", "a"))
 for i in range(n):
-    print(commands[ls[j+i]],": ",ls[i], file=open("output.txt", "a"))
+    print(commands[ls[j+i]],": ",ls[j+i], file=open("output.txt", "a"))
 print("\nAnd the difference between the chosen goodie with highest price and the lowest price is ", ls[j+n-1]-ls[j], file=open("output.txt", "a"))
 
